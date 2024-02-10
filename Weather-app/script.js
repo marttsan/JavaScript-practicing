@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded",()=>{
+
 const apiKey = "f5e490437dee5c9ebb5627bc0d40409f";
 const apiURL =
   "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
@@ -43,4 +45,5 @@ async function checkWeather(city) {
 
 searchBtn.addEventListener("click", () => {
   checkWeather(searchBox.value);
+});
 });
